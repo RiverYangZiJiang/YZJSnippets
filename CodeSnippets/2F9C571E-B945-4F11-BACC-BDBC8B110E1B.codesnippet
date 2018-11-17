@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, retain) &lt;#type#&gt; &lt;#name#&gt;;
+这里&lt; #type# &gt; &lt; #name# &gt;的作用就是为了提示你该输入什么，记得把&lt;之后、&gt;之前的空格删掉，这里写成&lt; #type# &gt;是因为不这么写就变成&lt;#type#&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2F9C571E-B945-4F11-BACC-BDBC8B110E1B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>snippets</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

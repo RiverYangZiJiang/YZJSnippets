@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // 【如果配置了主题自动切换，根据屏幕亮度，自动切换夜间模式或白天模式】
+    if (kSetting.themeAutoChange) {
+        CGFloat brightness = [UIScreen mainScreen].brightness;
+        
+        if (brightness &lt; 0.2) {
+            kSetting.theme = V2ThemeNight;
+        } else {
+            kSetting.theme = V2ThemeDefault;
+        }
+    }
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F609A854-C760-49CF-B9B4-9FEE0D30C7C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>黑夜模式</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

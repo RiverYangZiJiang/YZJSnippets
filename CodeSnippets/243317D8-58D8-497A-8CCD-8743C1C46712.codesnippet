@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;!DOCTYPE html&gt; // &lt;!DOCTYPE html&gt; 声明为 HTML5 文档
+&lt;html&gt;          // &lt;html&gt; 元素是 HTML 页面的根元素
+&lt;head&gt;          // &lt;head&gt; 元素包含了文档的元（meta）数据
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;标题&lt;/title&gt;  // &lt;title&gt; 元素描述了文档的标题
+&lt;/head&gt;
+&lt;body&gt;          // &lt;body&gt; 元素包含了可见的页面内容
+&lt;h1&gt;我的第一个标题&lt;/h1&gt;  // &lt;h1&gt; 元素定义一个大标题
+&lt;p&gt;我的第一个段落。&lt;/p&gt;  // &lt;p&gt; 元素定义一个段落
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>243317D8-58D8-497A-8CCD-8743C1C46712</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>H5-模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

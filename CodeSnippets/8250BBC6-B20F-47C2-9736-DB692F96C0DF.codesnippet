@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifndef Mateline_Prefix_pch
+#define Mateline_Prefix_pch
+
+#ifdef __OBJC__  &lt;* 如果是OC语言 *&gt;
+#import &lt;UIKit/UIKit.h&gt;
+#import &lt;Foundation/Foundation.h&gt;
+#import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;
+#import &lt;sys/syscall.h&gt;
+
+#ifdef DEBUG  &lt;* 如果是调试debug环境 *&gt;
+// 设置调试版本输出日志级别  // 【注意在此要将#ifdef DEBUG放到#ifdef __OBJC__里面，否则总是报无法访问DDLogLevel和DDLogLevelVerbose】
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else  &lt;* 如果是发布release环境 *&gt;
+// 设置发布版本输出日志级别
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif  /* DEBUG */
+
+// 再次对CocoaLumberjack打印日志的方法包装一下，使其能够打印出函数、行数等
+#define MLDDLogError(fmt, ...)  DDLogError((@"[%s] [line:%d] [pid:%d] [thread_selfid:%d]" fmt), __PRETTY_FUNCTION__, __LINE__, getpid(), syscall(SYS_thread_selfid), ##__VA_ARGS__);
+
+#endif   /* __OBJC__ */
+#endif /* Mateline_Prefix_pch */
+
+
+http://www.cnblogs.com/weiboyuan/p/5538304.html
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+参数解释：
+
+__VA_ARGS__是一个可变参数的宏，很少人知道这个宏，这个可变参数的宏是新的C99规范中新增的，目前似乎只有gcc支（VC6.0的编译器不支持）。宏前面加上##的作用在于，当可变参数的个数为0时，这里的##起到把前面多余的","去掉的作用,否则会编译出错, 你可以试试。
+__FILE__宏在预编译时会替换成当前的源文件名
+3.__LINE__宏在预编译时会替换成当前的行号
+4.__FUNCTION__宏在预编译时会替换成当前的函数名称
+有了以上这几个宏，特别是有了__VA_ARGS__，调试信息的输出就变得灵活多了。</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8250BBC6-B20F-47C2-9736-DB692F96C0DF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>PCH-CocoaLumberjack-宏</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

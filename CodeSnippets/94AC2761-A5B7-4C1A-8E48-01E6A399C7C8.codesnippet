@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>写明白是dev、beta或私有云测试，附带上主要更新和git提交ID，示例如下：
+【Beta测试】环信私有化整改 、合入“全景图试用版jsLib（版本号5.6.2）”
+git：ca3d4a3</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>94AC2761-A5B7-4C1A-8E48-01E6A399C7C8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>蒲公英更新说明规范</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifndef Mateline_Prefix_pch
+#define Mateline_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+    #import &lt;UIKit/UIKit.h&gt;
+    #import &lt;Foundation/Foundation.h&gt;
+    #import &lt;SystemConfiguration/SystemConfiguration.h&gt;
+    #import &lt;MobileCoreServices/MobileCoreServices.h&gt;
+    #import "AppDelegate.h"
+    #import &lt;AFNetworking/AFNetworking.h&gt;
+    #import "UIImageView+WebCache.h"
+    #import "BCUtils.h"
+    #import "MJRefresh.h"
+    #import "MBProgressHUD.h"
+    #import "MBProgressHUD+BC.h"
+    #import "UIViewController+HUD.h"
+    #import &lt;HyphenateFullSDK/EMSDKFull.h&gt;
+    #import "EMAlertView.h"
+    #import "EaseConversationListViewController.h"
+    #import "EaseEmotionEscape.h"
+    #import "EaseConvertToCommonEmoticonsHelper.h"
+    #import "NSDate+Category.h"
+    #import "SynthesizeSingleton.h"
+    #import "DatabaseManager.h"
+    #import "BCLanguages.h"
+    #import "AppCache.h"
+    #import "MLBaseViewController.h"
+//    #import "UIView+SDAutoLayout.h"
+    #import "BusinessHandle.h"
+    #import "MBProgressHUD+BC.h"
+    #import "UITableView+SDAutoTableViewCellHeight.h"
+    #import "NotificationConstants.h"
+    #import "MLConst.h"
+    #import &lt;Masonry/Masonry.h&gt;
+    #import &lt;RTRootNavigationController/RTRootNavigationController.h&gt;
+    #import &lt;RTRootNavigationController/UIViewController+RTRootNavigationController.h&gt;
+    #import &lt;FMDB/FMDB.h&gt;
+    #import &lt;MTLFMDBAdapter/MTLFMDBAdapter.h&gt;
+    #import &lt;Mantle/Mantle.h&gt;
+    #import "NSObject+PropertyName.h"
+
+    #import &lt;CocoaLumberjack/CocoaLumberjack.h&gt;
+
+
+//注释掉，统一使用缓存单例中的Domain
+//#define kServiceBaseUrl  @"https://wfm.dev.owsgo.com"
+
+#ifdef DEBUG
+#import &lt;sys/syscall.h&gt;
+#define NSLog(...) printf("[%s][%d:%d] %s [Line %d] %s\n",[[BCUtils getCurrentTime] UTF8String], getpid(), syscall(SYS_thread_selfid), __PRETTY_FUNCTION__,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
+// 设置调试版本输出日志级别
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+#else
+
+#define NSLog(...) {}
+// 设置发布版本输出日志级别
+static const DDLogLevel ddLogLevel = DDLogLevelInfo;
+
+#endif  /* DEBUG */
+
+#define Weak_Self __weak Strong_Self
+#define Strong_Self __typeof(self)
+//#define WeakSelf (__weak __typeof(self) weakSelf = self)
+//#define StrongSelf (__typeof(self) strongSelf = weakSelf)
+
+// 再次对CocoaLumberjack打印日志的方法包装一下，使其能够打印出函数、行数等
+#define MLDDLogError(fmt, ...)  DDLogError((@"[%s] [line:%d] [pid:%d] [thread_selfid:%d]" fmt), __PRETTY_FUNCTION__, __LINE__, getpid(), syscall(SYS_thread_selfid), ##__VA_ARGS__);
+#define MLDDLogWarn(fmt, ...)  DDLogWarn((@"[%s] [line:%d] [pid:%d] [thread_selfid:%d]" fmt), __PRETTY_FUNCTION__, __LINE__, getpid(), syscall(SYS_thread_selfid), ##__VA_ARGS__);
+#define MLDDLogInfo(fmt, ...)  DDLogInfo((@"[%s] [line:%d] [pid:%d] [thread_selfid:%d]" fmt), __PRETTY_FUNCTION__, __LINE__, getpid(), syscall(SYS_thread_selfid), ##__VA_ARGS__);
+#define MLDDLogDebug(fmt, ...)  DDLogDebug((@"[%s] [line:%d] [pid:%d] [thread_selfid:%d]" fmt), __PRETTY_FUNCTION__, __LINE__, getpid(), syscall(SYS_thread_selfid), ##__VA_ARGS__);
+#define MLDDLogVerbose(fmt, ...)  DDLogVerbose((@"[%s] [line:%d] [pid:%d] [thread_selfid:%d]" fmt), __PRETTY_FUNCTION__, __LINE__, getpid(), syscall(SYS_thread_selfid), ##__VA_ARGS__);
+
+#endif   /* __OBJC__ */
+
+#endif /* Mateline_Prefix_pch */
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F9BEF48B-9A51-4DA4-898F-B32FD7694431</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>PCH模板</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>GetDocumentDirectory</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>获取手机沙盒
+Xcode-Window-Devices &amp; Simulators-在INSTALLED APPS选择应用-点击设置按钮-Download Container
+
+方法1：NSString* appDocumentsFolder = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+方法2：NSString *documentsPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+
+NSString* appLibraryFolder = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+NSString* cacheFolder = [appLibraryFolder stringByAppendingPathComponent:@"Caches"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3FE18C56-7310-47D3-A9F2-0D93B1927B80</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GetDocumentDirectory-沙盒-sandbox</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

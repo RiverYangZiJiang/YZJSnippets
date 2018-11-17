@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>以最小粒度原则提交（按单个需求、按单个DTS单、按单个网上问题单、按单个代码检视任务、按单个指标、按单个专项任务）
+格式参考：
+【DTS单】【单号+问题描述】+ 问题修改简单说明
+【需求】【需求标题】+ 需求开发简单说明
+【网上问题单】【单号+问题描述】+ 问题修改简单说明
+【代码检视】【检视标题】+ 修改简单说明
+【专项任务】【任务标题】+ 修改简单说明
+【质量指标清理】【XXX指标】+ 修改简单说明
+【其他】【XXX】+ 简单说明
+【优化】、【文档】、【JS】
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B2C4C6F5-76A9-40C4-926C-713C52061AA5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>代码提交日志规范</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

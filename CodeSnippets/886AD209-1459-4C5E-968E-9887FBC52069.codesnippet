@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ NSData是OC的数据缓冲区，作用有两个：1.将数据读入NSData；2.输出NSData的数据。
+ 1.将数据读入NSData：包括将C数组、本地文件、网络文件、NSData数据
+ 2.输出NSData的数据：包括输出到C数组、本地文件、网络文件、NSData数据
+ */
+- (void)NSDataTest {
+    // 使用NSData读取指定URL对应的数据
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://cn.bing.com"]];
+    NSLog(@"data length = %ld", data.length);
+    
+    // 将NSData的数据用UTF-8的格式转换字符串
+    NSString *content = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"content = %@", content);
+    
+    // 将NSData指定范围的数据读入字符数组
+    char buffer[100];
+    [data getBytes:buffer range:NSMakeRange(10, 10)];
+    NSLog(@"buffer = %s", buffer);
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>886AD209-1459-4C5E-968E-9887FBC52069</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>IO-NSData</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>Mac环境中Jenkins的停止和启动命令
+启动sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+停止sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9454F199-4074-4E9B-8AC6-E3D3CA66B632</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Jenkins</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

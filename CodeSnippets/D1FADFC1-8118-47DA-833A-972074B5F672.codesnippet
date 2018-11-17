@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 直接修改menuView.frame的x坐标
+self.menuView.x = offset - kMenuWidth;
+
+// ViewFrameAccessor.m中实现如下
+- (void)setX:(CGFloat)newX
+{
+    CGRect newFrame = self.frame;
+    newFrame.origin.x = newX;
+    self.frame = newFrame;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D1FADFC1-8118-47DA-833A-972074B5F672</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>FrameAccessor-方便得到和修改view.frame的值</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

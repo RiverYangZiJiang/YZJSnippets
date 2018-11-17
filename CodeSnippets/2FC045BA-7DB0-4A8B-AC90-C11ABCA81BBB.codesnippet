@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ 将字典数据保存到沙盒中Documents目录的dic.plist文件中
+ */
+- (void)writeNSDictionaryDataToFile{
+    NSDictionary *dic = @{@"name":@"yzj", @"age":@28, @"members":@[@"a", @"b"]};
+    NSString *path = [NSString stringWithFormat:@"%@/dic.plist", [FileUtil getDocumentDirectory]];
+    [dic writeToFile:path atomically:YES];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2FC045BA-7DB0-4A8B-AC90-C11ABCA81BBB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>字典NSDictionary-NSNumber-数组NSArray-缩写</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

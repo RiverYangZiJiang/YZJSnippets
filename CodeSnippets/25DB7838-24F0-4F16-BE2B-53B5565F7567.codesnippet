@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ 将字典数据保存到沙盒中Documents目录的dic.plist文件中
+ */
+- (void)writeNSDictionaryDataToFile{
+    NSDictionary *dic = @{@"name":@"yzj", @"age":@28};
+    NSString *path = [NSString stringWithFormat:@"%@/dic.plist", [FileUtil getDocumentDirectory]];
+    [dic writeToFile:path atomically:YES];
+}
+
+/**
+ 从沙盒中Documents目录的dic.plist文件中获取可变字典数据，并且修改@"name"对应的值
+ */
+- (void)getNSDictionaryDataFromFile{
+    NSString *path = [NSString stringWithFormat:@"%@/dic.plist", [FileUtil getDocumentDirectory]];
+    NSMutableDictionary *md = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+    [md setObject:@"yzj1" forKey:@"name"];
+    [md writeToFile:path atomically:YES];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>25DB7838-24F0-4F16-BE2B-53B5565F7567</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSDictionaryExample</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

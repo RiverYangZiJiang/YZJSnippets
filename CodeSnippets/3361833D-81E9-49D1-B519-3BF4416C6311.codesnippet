@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>But in iOS 5, there’s an important change: Caches and tmp — the only two directories that aren’t backed up — are “cleaned” out when the device is low on space.
+
+// 获取tmp路径
+NSString *tmpPath  = [NSTemporaryDirectory();
+// tmp目录用来存放临时文件，在存储空间比较低时会被系统清空
+https://developer.apple.com/icloud/documentation/data-storage/index.html
+https://marco.org/2011/10/13/ios5-caches-cleaning</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3361833D-81E9-49D1-B519-3BF4416C6311</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tmp-temporary directory-目录</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

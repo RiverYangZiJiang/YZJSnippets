@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>https://www.cnblogs.com/seer/p/5703813.html
+1) 下载好所需要的第三方提供的.framework
+2）将第三方.framework文件拖入到工程所处的文件夹中（将文件拷入，即Copy items if needed）
+3) 选中项目名称
+4）选中TARGETS
+5）选中Build Phases
+6）在Link Binary With Libraries中添加刚刚拖入的项目
+
+接下来讲讲.framework文件的使用
+在你需要使用.framework的地方，调用：#import &lt;xxx/XXXXXX.h&gt;即可，其中xxx为framework名，XXXXXX为.framework中提供的某个类的名称</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A37FB560-F461-4D3D-B2E7-8853783050DC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>引用第三方提供的.framework</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

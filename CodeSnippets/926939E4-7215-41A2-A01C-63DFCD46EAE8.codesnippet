@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Preprocessor</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>m文件的组织。通过prama mark - XXX的方式来组织代码区块，以视图控制器为例：
+#pragma mark - Lifecycle
+
+- (instancetype)init {}
+- (void)dealloc {}
+- (void)viewDidLoad {}
+- (void)viewWillAppear:(BOOL)animated {}
+- (void)didReceiveMemoryWarning {}
+
+
+#pragma mark - IBActions &amp; Selectors &amp; Notifications
+#pragma mark -- IBActions
+
+- (IBAction)submitData:(id)sender {}
+
+#pragma mark -- Selectors
+- (void)selectorMethod {}
+
+#pragma mark -- Notifications
+
+- (void)statusBarOrientationDidChange:(NSNotification *)notification {}
+
+#pragma mark - Public
+
+- (void)publicMethod {}
+
+#pragma mark - Private
+
+- (void)privateMethod {}
+
+#pragma mark - Protocol conformance
+#pragma mark -- UITextFieldDelegate
+#pragma mark -- UITableViewDataSource
+#pragma mark -- UITableViewDelegate
+
+#pragma mark - NSCopying
+
+- (id)copyWithZone:(NSZone *)zone {}
+
+#pragma mark - NSObject
+
+- (NSString *)description {}
+
+#pragma mark - Custom Accessors
+
+- (void)setCustomProperty:(id)value {}
+- (id)customProperty {}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>926939E4-7215-41A2-A01C-63DFCD46EAE8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pragma</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

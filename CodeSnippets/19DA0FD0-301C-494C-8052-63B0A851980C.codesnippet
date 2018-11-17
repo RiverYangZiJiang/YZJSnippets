@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSDictionary *dic = [[NSDictionary alloc] init];
+    NSMutableDictionary *dicM = [[NSMutableDictionary alloc] init];
+    NSDictionary *dic1 = dicM;  // 并不会改变实际类型
+    
+    if ([dic isKindOfClass:NSClassFromString(@"NSMutableDictionary")]) {
+        NSLog(@"dic NSMutableDictionary");  // 不会跳转进来
+    }
+    
+    if ([dic1 isKindOfClass:NSClassFromString(@"NSMutableDictionary")]) {
+        NSLog(@"dic1 NSMutableDictionary");  // dic1 NSMutableDictionary
+    }
+    
+    if ([dicM isKindOfClass:NSClassFromString(@"NSDictionary")]) {
+        NSLog(@"NSDictionary");  // NSDictionary
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>19DA0FD0-301C-494C-8052-63B0A851980C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSClassFromString-201701</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

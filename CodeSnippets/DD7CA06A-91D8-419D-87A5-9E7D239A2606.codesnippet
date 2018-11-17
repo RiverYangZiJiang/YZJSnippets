@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>1.新工程都需要使用pod install命令安装第三方库
+2.Podfile新增pod，要用pod install进行安装
+3.pod update只是用来更新
+
+pod每次install或update都要升级cocoapods的spec仓库，在命令执行时添加参数可以忽略升级仓库，这样比较快一些。
+
+pod install --verbose --no-repo-update
+pod update --verbose --no-repo-update
+pod search podname
+pod update 更新第三方库到最新版本Update outdated project dependencies and create new Podfile.lock</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD7CA06A-91D8-419D-87A5-9E7D239A2606</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pod</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

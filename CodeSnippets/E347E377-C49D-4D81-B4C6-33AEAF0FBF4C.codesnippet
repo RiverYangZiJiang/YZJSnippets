@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>1、注释
+1.1 国际化key、value对之后有多余的空格是OK的，但是不能有//和&lt;!-- --&gt;这种注释
+1.2iOS单行注释可以用//，最好用//，也可以用&lt;!-- --&gt;，但是&lt;!-- --&gt;不要在key、value对之后，否则该value无法展示，只会展示key
+用&lt;!-- --&gt;单独一行也会出现莫名其妙的问题，导致value无法展示，只会展示key
+Android那边用&lt;!-- --&gt;
+1.3 "//"也不要出现在注释对之后，否则该行及其之后的国际化都无法正常显示虽然变异不会报错
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E347E377-C49D-4D81-B4C6-33AEAF0FBF4C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.XcodeStrings</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>国际化</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

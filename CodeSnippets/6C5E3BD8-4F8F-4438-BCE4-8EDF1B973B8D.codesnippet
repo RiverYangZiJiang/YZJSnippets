@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 1.块作为参数
+- (NSURLSessionDataTask *)UserLoginWithUsername:(NSString *)username password:(NSString *)password
+success:(void (^)(NSString *message))success
+failure:(void (^)(NSError *error))failure;
+
+[[V2DataManager manager] getMemberProfileWithUserId:nil username:self.usernameField.text success:^(V2MemberModel *member) {
+    
+    V2UserModel *user = [[V2UserModel alloc] init];
+    
+    user.member = member;
+    user.name = member.memberName;
+    
+    [V2DataManager manager].user = user;
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLoginSuccessNotification object:nil];
+    
+    [self endLogin];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+} failure:^(NSError *error) {
+    
+    [self endLogin];
+    
+}];
+
+// 2.块作为成员变量</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6C5E3BD8-4F8F-4438-BCE4-8EDF1B973B8D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>BlockSnippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

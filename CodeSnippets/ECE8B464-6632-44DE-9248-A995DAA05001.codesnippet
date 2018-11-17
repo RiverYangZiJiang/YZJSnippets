@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>1、使用Cocoapods引入FMDB和SQLCipher确实足够简单，工程配置文件全部帮你配置好，都不需要再设置。如果要使用FMDatabaseQueue，只需要自己再写一个类继承该类，然后写一个设置密码key的方法即可。
+// Podfile
+target 'FMDB-SQLCipher' do
+platform :ios, '8.0'
+pod 'FMDB/SQLCipher'
+end
+
+// 自定义的MLFMDatabaseQueue方法
+#import &lt;FMDB/FMDB.h&gt;
+
+@interface MLFMDatabaseQueue : FMDatabaseQueue
+
+/**
+设置数据库密码
+
+@param key 密码
+@return TRUE设置成功，FALSE设置失败
+*/
+- (BOOL)setKey:(NSString *)key;
+@end
+
+#import "MLFMDatabaseQueue.h"
+
+@implementation MLFMDatabaseQueue
+
+- (BOOL)setKey:(NSString *)key{
+    return [_db setKey:key];
+}
+@end
+
+
+// 创建和加密数据库
+_dbQueue = [MLFMDatabaseQueue databaseQueueWithPath:dbPath];
+[_dbQueue setKey:@"sdaf0023009234_+ewrwe"];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ECE8B464-6632-44DE-9248-A995DAA05001</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Ruby</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SQLCipher数据库加密</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

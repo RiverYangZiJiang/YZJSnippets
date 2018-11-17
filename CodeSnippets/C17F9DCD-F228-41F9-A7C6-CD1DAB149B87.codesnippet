@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ NSPathUtilities包含了NSString的扩展，从而为NSSting类新增了一些专门用于操作路径的方法，如得到绝对路径的文件名、文件后缀等
+ */
+- (void)NSPathUtilitiesTest {
+    NSString *filePath= [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+    NSLog(@"lastPathComponent = %@", [filePath lastPathComponent]);  // Info.plist
+    NSLog(@"pathExtension = %@", [filePath pathExtension]);  // plist
+    NSLog(@"pathComponents = %@", [filePath pathComponents]);  //
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C17F9DCD-F228-41F9-A7C6-CD1DAB149B87</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>IO-NSPathUtilities</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

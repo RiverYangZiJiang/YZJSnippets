@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// BlocksKit为第三方库
+// 为系统控件事件增加块处理，使得代码更紧凑，减少方法数
+#warning 杨子江 方便
+    // Handles
+    @weakify(self);
+    [self.closeButton bk_addEventHandler:^(id sender) {
+        @strongify(self);
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    } forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.containView bk_whenTapped:^{
+        @strongify(self);
+        [self hideKeyboard];
+    }];
+    
+    [self.backgroundImageView bk_whenTapped:^{
+        @strongify(self);
+        
+        [self hideKeyboard];
+        
+    }];
+
+
+#warning 杨子江 点击键盘Next，让密码输入框成为第一响应者
+[self.usernameField setBk_shouldReturnBlock:^BOOL(UITextField *textField) {
+    @strongify(self);
+    
+    [self.passwordField becomeFirstResponder];
+    
+    return YES;
+}];
+
+[self.passwordField setBk_shouldBeginEditingBlock:^BOOL(UITextField *textField) {
+    @strongify(self);
+    
+    [self showKeyboard];
+    
+    return YES;
+}];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>14C8B583-A067-4AEA-93CA-D799B5D852F9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>BlockSkit-为系统空间事件增加块处理</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

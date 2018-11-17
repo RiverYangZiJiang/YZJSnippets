@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>默认行为：
+1.如果UIScrollView上的子控件不管是在横的方向上还是垂直方向上超过屏幕，拖动其上的子控件，就可以横向或垂直方向滚动了；如果没有超过屏幕，则不可以滚动
+
+使用场景：
+在横向或垂直方向可能会超过屏幕，并需要滚动的地方，此时会向其添加多个子控件</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>41F4F45D-A433-40E9-B628-EB3FF3CB5128</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIScrollViewSnippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

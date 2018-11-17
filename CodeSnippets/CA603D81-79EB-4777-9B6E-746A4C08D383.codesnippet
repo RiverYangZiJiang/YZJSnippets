@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>优点：
+1.不用运行即可查看UI层次结构，而Xcode自带的需要运行才能用
+2.功能也比官方的更丰富
+缺点：
+pod安装包有5.9M，比较耗时，并且安装失败率高
+
+安装：
+pod 'Reveal-SDK', :configurations =&gt; ['Debug']</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CA603D81-79EB-4777-9B6E-746A4C08D383</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Reveal-SDK</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

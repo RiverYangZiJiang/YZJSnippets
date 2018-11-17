@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>1.在Mac上为iOS设备建立虚拟网络端口
+rvictl -s ee6be835c7552e6a3f741cc0edc16dc0cdfc7830
+注：ee6be835c7552e6a3f741cc0edc16dc0cdfc7830为手机设备ID，可通过Xcode-Window-Devices &amp; Simulators查看手机设备ID
+2.使用tcpdump抓包
+sudo tcpdump -i rvi0 -n -s 0 -w dump.pcap tcp
+3.停止抓包
+control+c
+4.为避免每次抓包都要建立不同的虚拟网络端口，在抓包结束后要删除本次申请的RVI这个虚拟网卡
+rvictl -x ee6be835c7552e6a3f741cc0edc16dc0cdfc7830</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D0E593A3-185F-4AC4-B391-2E3D5DB35302</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>抓包-流量</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

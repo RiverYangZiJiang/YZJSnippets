@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ 为了提高应用的可移植性和访问速度，我们可以把一些无变化的项目资源文件放在应用中，可以使用NSBundle来访问这种应用自包含的资源文件。这些资源文件可以是text文本、plist文件、照片等
+ */
+- (void)NSBundleTest {
+    // 获得本应用对应的应用程序包
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    // 任意拖入到工程里的文件，都可以通过本方法访问到
+    NSString *filePath= [mainBundle pathForResource:@"ehs_router" ofType:@"mspl"];
+    
+    // 一步到位版本
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"ehs_router" ofType:@"mspl"];
+    
+    // 不能访问到应用配置文件Info.plist
+//    NSString *filePath= [mainBundle pathForResource:@"Info" ofType:@"plist"];
+    // 使用文件内容来初始化NSString
+    NSString *content = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSLog(@"content = %@", content);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>18A46F68-8023-4F00-B01C-24037AD46197</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>IO-NSBundle</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
