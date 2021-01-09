@@ -2,19 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic, retain) &lt;#type#&gt; &lt;#name#&gt;;
-这里&lt; #type# &gt; &lt; #name# &gt;的作用就是为了提示你该输入什么，记得把&lt;之后、&gt;之前的空格删掉，这里写成&lt; #type# &gt;是因为不这么写就变成&lt;#type#&gt;</string>
+这里&lt; #type# &gt; &lt; #name# &gt;的作用就是为了提示你该输入什么，记得把&lt;之后、&gt;之前的空格删掉，这里写成&lt; #type# &gt;是因为不这么写就变成&lt;#type#&gt;
+用户自定义snippets位置
+~/Library/Developer/Xcode/UserData/CodeSnippets 
+系统snippets位置
+/Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Versions/A/Resources/SystemCodeSnippets.codesnippets
+
+参考文献
+1.Xcode奇淫巧技（四）——代码块Code Snippets  https://blog.csdn.net/a184251289/article/details/58032989</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2F9C571E-B945-4F11-BACC-BDBC8B110E1B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>snippets</string>
+	<string>snippets语法-位置</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
