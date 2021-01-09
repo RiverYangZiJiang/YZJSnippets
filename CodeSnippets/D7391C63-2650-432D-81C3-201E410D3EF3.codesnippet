@@ -3,36 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>BlockSnippet</string>
+	<string>lazyinit-懒加载初始化</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// 2.块作为成员变量
-@property (copy, nonatomic) void(^&lt;#blockName#&gt;)(&lt;#argument#&gt; &lt;#argumentType#&gt;);
-
-// 3.定义block类型
-typedef &lt;#returnType#&gt;(^&lt;#name#&gt;)(&lt;#arguments#&gt;);
-
-// 1.块作为参数
-- 
-success:(void (^)(NSString *message))success
-failure:(void (^)(NSError *error))failure
-
-
-</string>
+	<string>- (&lt;#className#&gt; *)&lt;#attributeName#&gt; {
+    if (!_&lt;#attributeName#&gt;) {
+        _&lt;#attributeName#&gt; = [[&lt;#className#&gt; alloc] init];
+    }
+    return _&lt;#attributeName#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6C5E3BD8-4F8F-4438-BCE4-8EDF1B973B8D</string>
+	<string>D7391C63-2650-432D-81C3-201E410D3EF3</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>BlockSnippet</string>
+	<string>lazyinit-懒加载初始化</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

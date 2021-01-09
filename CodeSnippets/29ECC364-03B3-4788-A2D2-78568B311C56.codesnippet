@@ -2,24 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>layoutSubViews_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>mac下一般用smb服务来进行远程文件访问，但要用FTP的话，高版本的mac os默认关掉了，可以用如下命令打开:
-sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist
-相应的，要关闭则：
-sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist</string>
+	<string>- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>28055404-5D97-476A-853D-1577C1D7D5F5</string>
+	<string>29ECC364-03B3-4788-A2D2-78568B311C56</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>linux命令-ftp</string>
+	<string>layoutSubViews_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
