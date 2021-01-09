@@ -2,62 +2,55 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>Preprocessor</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>m文件的组织。通过prama mark - XXX的方式来组织代码区块，以视图控制器为例：
-#pragma mark - Lifecycle
-
+	<string>通过prama mark - XXX的方式来组织代码区块，以下以视图控制器为例，其他类按实际情况进行裁剪：
+#pragma mark - Lifecycle（生命周期）
 - (instancetype)init {}
-- (void)dealloc {}
 - (void)viewDidLoad {}
 - (void)viewWillAppear:(BOOL)animated {}
 - (void)didReceiveMemoryWarning {}
+- (void)dealloc {}
 
-
-#pragma mark - IBActions &amp; Selectors &amp; Notifications
-#pragma mark -- IBActions
-
-- (IBAction)submitData:(id)sender {}
-
+#pragma mark - Selectors &amp; Notifications &amp; IBActions
 #pragma mark -- Selectors
 - (void)selectorMethod {}
 
 #pragma mark -- Notifications
-
 - (void)statusBarOrientationDidChange:(NSNotification *)notification {}
 
-#pragma mark - Public
+#pragma mark -- IBActions
+- (IBAction)submitData:(id)sender {}
 
+
+#pragma mark - Public（对外公开方法）
 - (void)publicMethod {}
 
-#pragma mark - Private
-
+#pragma mark - Private（私有方法）
 - (void)privateMethod {}
 
-#pragma mark - Protocol conformance
+#pragma mark - Protocol/Delegate（协议和代理）
 #pragma mark -- UITextFieldDelegate
 #pragma mark -- UITableViewDataSource
 #pragma mark -- UITableViewDelegate
 
-#pragma mark - NSCopying
-
-- (id)copyWithZone:(NSZone *)zone {}
-
-#pragma mark - NSObject
-
+#pragma mark - Override（重写/覆盖）
 - (NSString *)description {}
 
-#pragma mark - Custom Accessors
-
+#pragma mark - Getters &amp; Setters
 - (void)setCustomProperty:(id)value {}
 - (id)customProperty {}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>926939E4-7215-41A2-A01C-63DFCD46EAE8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>pragma</string>
 	<key>IDECodeSnippetUserSnippet</key>
