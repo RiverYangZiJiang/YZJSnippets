@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CPCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)setup {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    [super setup];
+    
+    [self.contentView addSubview:titleLabel];
+}
+
+- (void)setObject:(CPGroupStyleCellObject *)object {
+    [super setObject:object];
+    self.titleLabel.text = object.title;
+}
+
+- (void)updateConstraints {
+    [self.&lt;#name#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo();
+        make.right.equalTo();
+        make.top.equalTo();
+        make.bottom.equalTo();
+        make.width.mas_equalTo();
+        make.height.mas_equalTo();
+    }];
+    
+    [super updateConstraints];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CGFloat left = 16;
+    
+    [self.titleLabel sizeToFit];
+    self.titleLabel.left = left;
+    self.titleLabel.top = SH(12);
+    
+    self.lineView.width = self.contentView.width - 2 * left;
+    self.lineView.left = left;
+    self.lineView.height = SC_VIEW_VALUE_FLUCTUATE(1);
+    self.lineView.top = self.titleLabel.bottom + SH(8);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DE9F57FF-E21E-49B2-BBD9-3CD21A8544A8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CPCell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

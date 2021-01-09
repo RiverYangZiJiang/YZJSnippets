@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>updateConstraintsYzj</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)updateConstraints {
+    [self.&lt;#name#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo();
+        make.right.equalTo();
+        make.top.equalTo();
+        make.bottom.equalTo();
+        make.width.mas_equalTo();
+        make.height.mas_equalTo();
+    }];
+    
+    [super updateConstraints];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AC40718F-7F65-48C1-A11A-FB6A52385C43</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>updateConstraintsYzj</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
