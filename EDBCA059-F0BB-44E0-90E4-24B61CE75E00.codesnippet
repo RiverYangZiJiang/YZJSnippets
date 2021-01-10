@@ -3,27 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>setViewFrame_YZJ</string>
+	<string>strongTableView_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.&lt;#name#&gt;.top = 0;
-self.&lt;#name#&gt;.left = 0;
-self.&lt;#name#&gt;.width = self.view.width;
-self.&lt;#name#&gt;.height = SH(161);</string>
+	<string>@property (nonatomic, strong) UITableView *tableView;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6A137EBB-F72C-4F47-8B09-9E0CE32BD662</string>
+	<string>EDBCA059-F0BB-44E0-90E4-24B61CE75E00</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>setViewFrame_YZJ</string>
+	<string>strongTableView_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
