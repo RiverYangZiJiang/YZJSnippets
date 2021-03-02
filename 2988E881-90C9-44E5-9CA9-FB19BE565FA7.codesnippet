@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@assign</string>
+	<string>strongUIImageView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(assign, nonatomic) &lt;#Object#&gt; &lt;#name#&gt;;</string>
+	<string>/// 
+@property (nonatomic, strong) UIImageView *imageView;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>AD2BCB95-2C68-4BA0-BCE7-47D280A786FB</string>
+	<string>2988E881-90C9-44E5-9CA9-FB19BE565FA7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>assign</string>
+	<string>strongUIImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

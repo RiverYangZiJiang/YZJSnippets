@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/* 
+ 一般来说，没有进行过任何设置的app，默认退到后台极短的1秒后就变成挂起状态
+ 当设置了UIBackgroundTaskIdentifier后台任务标记时，程序后台保活会延迟到三分钟左右
+ 再设置后台持续定位，或者持续voip播放模式后，会长时间保活，这个时间从原理上可以无限（参考网易、酷狗等音乐播放器），我自己用的后台持续定位模式所持续的时间基本都在2小时以上【确实可以运行挺长时间】
+ */
+@interface AppDelegate ()
+// 定时任务，每秒将badge的值加1
+@property (nonatomic, strong) dispatch_source_t badgeTimer;
+@end
+
+- (void)applicationDidEnterBackground:(UIApplication *)application{
+    [self stratBadgeNumberCount];
+    [self startBgTask];
+}
+
+/// 后台请求180秒
+- (void)startBgTask{
+    UIApplication *application = [UIApplication sharedApplication];
+    __block UIBackgroundTaskIdentifier bgTask;
+    bgTask = [application beginBackgroundTaskWithExpirationHandler:^{
+        //这里延迟的系统时间结束
+        NSLog(@"%f",application.backgroundTimeRemaining);
+    }];
+}
+
+/// 定时修改badge的值
+- (void)stratBadgeNumberCount{
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+
+    _badgeTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+    dispatch_source_set_timer(_badgeTimer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 1 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(_badgeTimer, ^{
+        [UIApplication sharedApplication].applicationIconBadgeNumber ++;
+    });
+    dispatch_resume(_badgeTimer);
+}
+
+/*
+ iOS 关于后台持续运行 https://www.jianshu.com/p/47ff7c239ba2
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>659539A6-9E3C-4514-9ED6-1B0245E32CB7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>后台保活-后台运行-background task</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

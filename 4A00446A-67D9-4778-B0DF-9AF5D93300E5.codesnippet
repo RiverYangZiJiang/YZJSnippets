@@ -3,26 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyInitUILabel</string>
+	<string>lazyInitButtun</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UILabel *)&lt;#name#&gt;{
-    if(!_&lt;#name#&gt;) {
-        _&lt;#name#&gt; = [UILabel labelWithTextColor:[UIColor colorWithHexString:@"#0E1F33"] backgroundColor:[UIColor clearColor] textFont:[UIFont PingFangSC_RegularOfSize:14] textAlignment:NSTextAlignmentLeft nuberOflines:1];
+	<string>- (CPButton *)&lt;#buttonName#&gt; {
+    if (!_&lt;#buttonName#&gt;) {
+        _&lt;#buttonName#&gt; = [[CPButton alloc] initWithTitle:@"更多福利" titleColor:[UIColor colorWithHexString:@"#5A6B80"] titleFont:[UIFont PingFangSC_RegularOfSize:12] doneBlock:^(UIButton *button) {
+            CPActivityHeaderCellModel *model = (CPActivityHeaderCellModel *)(self.object);
+            if (model.subTitleActionBlock) {
+                model.subTitleActionBlock();
+            }
+        }];
     }
-    return _&lt;#name#&gt;;
+    return _&lt;#buttonName#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE94D2CA-945E-4C25-9333-F0BF4D6EF2FD</string>
+	<string>4A00446A-67D9-4778-B0DF-9AF5D93300E5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyInitUILabel</string>
+	<string>lazyInitButtun</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>assign</string>
+	<string>viewWillAppear_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/// &lt;#注释#&gt;
-@property (nonatomic, assign) &lt;#type#&gt; &lt;#name#&gt;;</string>
+	<string>- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B1D950A0-B6B9-48AB-A919-AA3E68A228FB</string>
+	<string>59071A8F-3D88-41E2-82EC-8396A6FDC0FE</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>assign</string>
+	<string>viewWillAppear_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

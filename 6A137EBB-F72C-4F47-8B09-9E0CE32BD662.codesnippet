@@ -9,7 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.&lt;#name#&gt;.top = 0;
+	<string>// 不要用right/bottom/centerX/centerY等，否则在不同机型可能会错误，如iPhone7等
+//[self.titleLabel sizeToFit];  // 多行label用sizeToFit
+self.&lt;#name#&gt;.top = 0;
 self.&lt;#name#&gt;.left = 0;
 self.&lt;#name#&gt;.width = self.view.width;
 self.&lt;#name#&gt;.height = SH(161);</string>

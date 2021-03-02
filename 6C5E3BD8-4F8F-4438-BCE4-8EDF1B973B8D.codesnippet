@@ -9,7 +9,10 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// 1.块作为参数
+	<string>// 1.block作为属性
+@property (nonatomic, copy) void(^doneBlock)(void);
+
+2.块作为参数
 - (NSURLSessionDataTask *)UserLoginWithUsername:(NSString *)username password:(NSString *)password
 success:(void (^)(NSString *message))success
 failure:(void (^)(NSError *error))failure;
@@ -36,9 +39,7 @@ failure:(void (^)(NSError *error))failure;
 }];
 
 // 无参块
-- (void)refreshUserSuccess:(void (^)(void))success fail:(void (^)(void))fail{}
-
-// 2.块作为成员变量</string>
+- (void)refreshUserSuccess:(void (^)(void))success fail:(void (^)(void))fail{}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6C5E3BD8-4F8F-4438-BCE4-8EDF1B973B8D</string>
 	<key>IDECodeSnippetLanguage</key>

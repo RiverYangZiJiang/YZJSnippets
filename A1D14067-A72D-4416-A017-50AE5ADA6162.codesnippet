@@ -2,17 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>圆角cornerRadius</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        _badgeView.layer.cornerRadius = _badgeSize / 2;
-        _badgeView.clipsToBounds = YES;</string>
+	<string>// 如果需要同时设置本视图的圆角和边框颜色和宽度，则只能使用本方式，否则可以使用贝塞尔曲线画圆角
+_badgeView.layer.cornerRadius = 6;
+_badgeView.clipsToBounds = YES;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A1D14067-A72D-4416-A017-50AE5ADA6162</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>圆角cornerRadius</string>
 	<key>IDECodeSnippetUserSnippet</key>

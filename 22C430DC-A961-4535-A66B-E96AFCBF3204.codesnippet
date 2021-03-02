@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>CGFloat timeH = ceil([self.timeLabel.text widthForFont:self.timeLabel.font]);</string>
+	<string>CGFloat timeW = ceil([self.contentLabel widthForSingleLine]);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>22C430DC-A961-4535-A66B-E96AFCBF3204</string>
 	<key>IDECodeSnippetLanguage</key>
