@@ -3,27 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyInitUILabel</string>
+	<string>addSpaceCell</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UILabel *)&lt;#name#&gt;{
-    if(!_&lt;#name#&gt;) {
-        _&lt;#name#&gt; = [UILabel labelWithTextColor:[UIColor colorWithHexString:@"#0E1F33"] backgroundColor:[UIColor clearColor] textFont:[UIFont PingFangSC_RegularOfSize:14] textAlignment:NSTextAlignmentLeft nuberOflines:1];
-        _&lt;#name#&gt;.text = @"测";
-    }
-    return _&lt;#name#&gt;;
-}</string>
+	<string>    [objects addObject:[self spaceCellWithBackgroundColr:SC_VIEW_BACKGROUND_COLOR height:16]];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE94D2CA-945E-4C25-9333-F0BF4D6EF2FD</string>
+	<string>75113860-BA70-4C66-AA30-18A9C6DB47E5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyInitUILabel</string>
+	<string>addSpaceCell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

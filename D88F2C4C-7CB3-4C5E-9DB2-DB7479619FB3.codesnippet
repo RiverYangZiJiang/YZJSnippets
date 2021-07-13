@@ -3,27 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyInitUILabel</string>
+	<string>initTextField</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UILabel *)&lt;#name#&gt;{
-    if(!_&lt;#name#&gt;) {
-        _&lt;#name#&gt; = [UILabel labelWithTextColor:[UIColor colorWithHexString:@"#0E1F33"] backgroundColor:[UIColor clearColor] textFont:[UIFont PingFangSC_RegularOfSize:14] textAlignment:NSTextAlignmentLeft nuberOflines:1];
-        _&lt;#name#&gt;.text = @"测";
+	<string>- (UITextField *)textField {
+    if (!_textField) {
+        _textField = [[UITextField alloc] init];
+        _textField.placeholder = @"验证码";
+        _textField.font = [UIFont PingFangSC_RegularOfSize:14];
+        _textField.textColor = [UIColor colorWithHexString:@"#0F1C33"];
+        _textField.textAlignment = NSTextAlignmentRight;
+        _textField.delegate = self;
     }
-    return _&lt;#name#&gt;;
+    return _textField;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE94D2CA-945E-4C25-9333-F0BF4D6EF2FD</string>
+	<string>D88F2C4C-7CB3-4C5E-9DB2-DB7479619FB3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyInitUILabel</string>
+	<string>initTextField</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

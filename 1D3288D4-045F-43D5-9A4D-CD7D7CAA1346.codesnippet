@@ -9,7 +9,8 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UIScrollView *scrollView;</string>
+	<string>/// 
+@property (nonatomic, strong) UIScrollView *scrollView;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1D3288D4-045F-43D5-9A4D-CD7D7CAA1346</string>
 	<key>IDECodeSnippetLanguage</key>

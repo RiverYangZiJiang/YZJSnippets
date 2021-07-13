@@ -12,10 +12,7 @@
 	<string>- (CPButton *)&lt;#buttonName#&gt; {
     if (!_&lt;#buttonName#&gt;) {
         _&lt;#buttonName#&gt; = [[CPButton alloc] initWithTitle:@"更多福利" titleColor:[UIColor colorWithHexString:@"#5A6B80"] titleFont:[UIFont PingFangSC_RegularOfSize:12] doneBlock:^(UIButton *button) {
-            CPActivityHeaderCellModel *model = (CPActivityHeaderCellModel *)(self.object);
-            if (model.subTitleActionBlock) {
-                model.subTitleActionBlock();
-            }
+            DLog(@"");
         }];
     }
     return _&lt;#buttonName#&gt;;

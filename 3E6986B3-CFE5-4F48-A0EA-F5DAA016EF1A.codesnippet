@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>requestData_YZJ</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/// 查询提现申请详情
+- (void)requestData {
+//    [self.view gh_showLoading];
+//
+//    CPNetworkCodec *networkCodec = [[CPNetworkCodec alloc] init];
+//    networkCodec.apiName = @"/api/profit/drawMoneyDetail";
+//    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+//    [params safeObject:self.object.uuid forKey:@"uuid"];
+//    networkCodec.requestModel = params;
+//    networkCodec.dataClass = [CPIncomeListObject class];
+//    [networkCodec sendRequestWithSuccess:^(SCDefaultResponseModel *result) {
+//        [self.tableView.mj_header endRefreshing];
+//        [self.view gh_hideLoading];
+//        if([result responseSuccess]){
+//            self.object = (CPIncomeListObject *)result.data;
+//            [self reloadData];
+//        }else {
+//            [self.view showErrorWithImage:[UIImage imageNamed:@"invoice-noData"] text:@"暂无数据" action:^{
+//                @strongify(self);
+//                [self refresh];
+//            }];
+//        }
+//    } failure:^(NSError *error) {
+//        [self.tableView.mj_header endRefreshing];
+//        [self.view gh_hideLoading];
+//        @weakify(self)
+//        [self.view showErrorWithImage:[UIImage imageNamed:@"common_no_network"]
+//                                 text:@"网络开小差，检查后再试吧"
+//                               action:^{
+//            @strongify(self)
+//            [self.view hideErrorView];
+//            [self requestWithdrawDetailData];
+//        }];
+//        DLog(@"error: %@", error);
+//    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3E6986B3-CFE5-4F48-A0EA-F5DAA016EF1A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>requestData_YZJ</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

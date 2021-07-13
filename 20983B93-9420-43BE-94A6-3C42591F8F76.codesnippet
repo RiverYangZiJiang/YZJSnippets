@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mas_remakeYzj</string>
+	<string>mas_make_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> [self.&lt;#name#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
+	<string> [self.&lt;#name#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo();
         make.right.equalTo();
-        make.top.equalTo();
-        make.bottom.equalTo();
+        make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop).offset();
+        make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom).offset();
         make.width.mas_equalTo();
         make.height.mas_equalTo();
     }];</string>
@@ -24,7 +24,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>mas_remakeYzj</string>
+	<string>mas_make_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

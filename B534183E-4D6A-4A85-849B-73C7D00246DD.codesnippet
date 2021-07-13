@@ -9,16 +9,21 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>1.有一个imageView属性，所以不要在UITableViewCell子类或分类中命名为imageView，否则会报错
-@property (nonatomic, readonly, strong, nullable) UIImageView *imageView;</string>
+	<string> GitHub无法访问：
+ 1.首先通过网址https://github.com.ipaddress.com/www.github.com查看当前github.com对应的IP地址，如140.82.114.4
+ 2.修改vi /private/etc/hosts文件，增加140.82.114.4 github.com
+ 3.sudo killall -HUP mDNSResponder【有时确实能够打开，但是不稳定】
+ 
+ 1.Mac 最近GitHub无法访问？
+ 2.github访问不了解决方法</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DC44A362-061D-4FE8-8233-C2AB46297F97</string>
+	<string>B534183E-4D6A-4A85-849B-73C7D00246DD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewCell</string>
+	<string> GitHub</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

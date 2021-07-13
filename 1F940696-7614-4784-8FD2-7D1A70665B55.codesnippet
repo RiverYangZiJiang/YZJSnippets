@@ -9,10 +9,8 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    LMJWordArrowItem *item00 = [LMJWordArrowItem itemWithTitle:@"UIViewController生命周期" subTitle:nil];
-    item00.destVc = [LMJLifeCycleViewController class];
-    
-    self.addItem(item00);</string>
+	<string>LMJWordArrowItem *item02 = [LMJWordArrowItem itemWithTitle:@"NSDate" subTitle:nil destVc:@"YZJNSDateVC"];
+self.addItem(item02);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1F940696-7614-4784-8FD2-7D1A70665B55</string>
 	<key>IDECodeSnippetLanguage</key>

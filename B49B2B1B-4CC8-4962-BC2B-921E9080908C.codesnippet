@@ -9,7 +9,14 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>self.selectionStyle = UITableViewCellSelectionStyleNone;  // 单元格不可点击</string>
+	<string>1.有一个imageView属性，所以不要在UITableViewCell子类或分类中命名为imageView，否则会报错
+@property (nonatomic, readonly, strong, nullable) UIImageView *imageView;
+
+2.属性
+self.selectionStyle = UITableViewCellSelectionStyleNone;  // 单元格不可点击
+self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;  // 无下划线，默认带下划线
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B49B2B1B-4CC8-4962-BC2B-921E9080908C</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -17,7 +24,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableViewCell_annotation</string>
+	<string>UITableViewCell总结</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,30 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyInitUILabel</string>
+	<string>set_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UILabel *)&lt;#name#&gt;{
-    if(!_&lt;#name#&gt;) {
-        _&lt;#name#&gt; = [UILabel labelWithTextColor:[UIColor colorWithHexString:@"#0E1F33"] backgroundColor:[UIColor clearColor] textFont:[UIFont PingFangSC_RegularOfSize:14] textAlignment:NSTextAlignmentLeft nuberOflines:1];
-        _&lt;#name#&gt;.text = @"测";
-    }
-    return _&lt;#name#&gt;;
-}</string>
+	<string>var set: Set&lt;Int&gt; = [1, 2]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE94D2CA-945E-4C25-9333-F0BF4D6EF2FD</string>
+	<string>FB649DE4-20AD-4BD5-B399-0753764CA60E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyInitUILabel</string>
+	<string>set_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

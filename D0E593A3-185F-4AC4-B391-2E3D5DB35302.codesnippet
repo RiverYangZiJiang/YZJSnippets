@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>1.在Mac上为iOS设备建立虚拟网络端口
+	<string>Charles真机转包《我的云文档/我的文档/Program/网络-多线程-操作系统/HTTPS/http-HTTPS-抓包-流量.doc》
+
+1.在Mac上为iOS设备建立虚拟网络端口
 rvictl -s ee6be835c7552e6a3f741cc0edc16dc0cdfc7830
 注：ee6be835c7552e6a3f741cc0edc16dc0cdfc7830为手机设备ID，可通过Xcode-Window-Devices &amp; Simulators查看手机设备ID
 2.使用tcpdump抓包
@@ -20,6 +24,8 @@ rvictl -x ee6be835c7552e6a3f741cc0edc16dc0cdfc7830</string>
 	<string>D0E593A3-185F-4AC4-B391-2E3D5DB35302</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>抓包-流量</string>
 	<key>IDECodeSnippetUserSnippet</key>

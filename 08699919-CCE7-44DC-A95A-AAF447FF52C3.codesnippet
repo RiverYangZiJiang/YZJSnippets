@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>1.Masonry实现cell自适应高度，最优雅、并且是官方推荐的方法。如果UILabel有多行，会自动适配高度
+  tableView.estimatedRowHeight = 60;  // 必须设置估算高度，否则失效
+  tableView.rowHeight = UITableViewAutomaticDimension;
+
+  设置cell里最上方控件与contentView上方的距离，最下方控件与contentView下方的距离，各控件间距离
+
+  Masonry实现cell自适应高度 https://www.jianshu.com/p/c11f3398ddd7
+  iOS-UITableViewCell自适应高度最优雅的方法
+
+2.重用，如果已经生成足够多的cell，下拉及reloadData时不会再生成新的cell
+所以在根据状态修改cell样式的地方，需要使用if/else，如刚开始走得if分支，然后值发生变化时，刷新表格，此时要走else分支，否则会导致
+  </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>08699919-CCE7-44DC-A95A-AAF447FF52C3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITableView总结</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

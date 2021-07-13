@@ -12,6 +12,7 @@
 	<string>- (UIView *)&lt;#name#&gt; {
     if (!_&lt;#name#&gt;) {
         _&lt;#name#&gt; = [[UIView alloc] init];
+        _&lt;#name#&gt;.backgroundColor = [UIColor colorWithHexString:@"#ECEDEF"];
     }
     return _&lt;#name#&gt;;
 }</string>

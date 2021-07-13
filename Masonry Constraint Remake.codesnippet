@@ -3,27 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazyInitUILabel</string>
+	<string>mas_remake</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UILabel *)&lt;#name#&gt;{
-    if(!_&lt;#name#&gt;) {
-        _&lt;#name#&gt; = [UILabel labelWithTextColor:[UIColor colorWithHexString:@"#0E1F33"] backgroundColor:[UIColor clearColor] textFont:[UIFont PingFangSC_RegularOfSize:14] textAlignment:NSTextAlignmentLeft nuberOflines:1];
-        _&lt;#name#&gt;.text = @"测";
-    }
-    return _&lt;#name#&gt;;
-}</string>
+	<string>[&lt;#view#&gt; mas_remakeConstraints:^(MASConstraintMaker *make){
+    &lt;#code#&gt;
+}];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE94D2CA-945E-4C25-9333-F0BF4D6EF2FD</string>
+	<string>53203A7C-0C2C-493C-9CAE-8900D9AB68A8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazyInitUILabel</string>
+	<string>Masonry Constraint Remake</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

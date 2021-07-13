@@ -3,15 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>UITapGestureRecognizerYzj</string>
+	<string>addGesture_UITapGestureRecognizerYzj</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoButtonDidPressed:)];
+	<string>如何为UIView增加手势回调bloc：使用UIView+GestureCallback里方法为UIView增加手势回调
+-(NSString*)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback
+
+
+UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoButtonDidPressed:)];
 &lt;#view#&gt;.userInteractionEnabled = YES;  // 必须设置才能交互
-        [&lt;#view#&gt;. addGestureRecognizer:gr];</string>
+[&lt;#view#&gt;. addGestureRecognizer:gr];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7A85005F-6099-47A3-ABC7-5D14B770C640</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -19,7 +23,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITapGestureRecognizerYzj</string>
+	<string>addGesture_UITapGestureRecognizerYzj</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

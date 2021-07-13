@@ -9,7 +9,8 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UILabel *titleLabel;</string>
+	<string>/// 
+@property (nonatomic, strong) UILabel *titleLabel;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1F517FE7-3212-407D-AD84-EDC3BB37F982</string>
 	<key>IDECodeSnippetLanguage</key>

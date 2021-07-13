@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string></string>
+	<string>viewDidAppear_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIAlertController : UIViewController</string>
+	<string>- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>836778F5-E79A-4D88-ADAC-4B2CEA7F4520</string>
+	<string>1A88DD7F-252E-425F-97A1-C74548B44D4C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>viewDidAppear_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
