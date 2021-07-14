@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>forDict_YZJ</string>
+	<string>swift-forin</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for (key, value) in dict {
-    print(key + value)
+	<string>for case let &lt;#object#&gt; in &lt;#collection#&gt; as [&lt;#Type#&gt;] {
+    
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>19B436A9-0465-42A0-9B04-B5A953C31C14</string>
+	<string>48C9EB7D-A166-4781-8DC8-6961B57BDC02</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>for-in loop that casts objects inline</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>forDict_YZJ</string>
+	<string>Swift for-in loop with casting</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

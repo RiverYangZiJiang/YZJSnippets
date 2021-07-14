@@ -3,23 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>forDict_YZJ</string>
+	<string>swift-dispatchasync</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for (key, value) in dict {
-    print(key + value)
+	<string>DispatchQueue.global(qos: .default).async {
+    &lt;#asynchronous work#&gt;
+    DispatchQueue.main.async {
+        &lt;#callback#&gt;
+    }
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>19B436A9-0465-42A0-9B04-B5A953C31C14</string>
+	<string>731C3867-9874-4559-8350-5F2B054A5AF9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>GCD dispatch_async snippet for Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>forDict_YZJ</string>
+	<string>Swift dispatch_async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>forDict_YZJ</string>
+	<string>forRangeSwift_YZJ</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for (key, value) in dict {
-    print(key + value)
+	<string>for i in (0..&lt;10).reversed() {
+    print(i)  // 9到0
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>19B436A9-0465-42A0-9B04-B5A953C31C14</string>
+	<string>7064CBBC-576D-475F-82F6-5B526A995D29</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>forDict_YZJ</string>
+	<string>forRangeSwift_YZJ</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

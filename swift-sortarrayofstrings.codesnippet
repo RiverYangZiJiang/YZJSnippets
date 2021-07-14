@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>forDict_YZJ</string>
+	<string>swift-sortarrayofstrings</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>for (key, value) in dict {
-    print(key + value)
-}</string>
+	<string>&lt;#arrayOfStrings#&gt;.sorted { (a, b) -&gt; Bool in
+            let comparisonResult = a.compare(b, options: [], range: a.range(of: a), locale: Locale.current)
+            return comparisonResult == .orderedSame
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>19B436A9-0465-42A0-9B04-B5A953C31C14</string>
+	<string>B005E7A7-789D-43C2-873A-0DD8040EE2B8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>Swift String Array locale-aware sorting</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>forDict_YZJ</string>
+	<string>Swift String Array locale-aware sorting</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
